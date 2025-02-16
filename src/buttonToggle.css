@@ -1,0 +1,52 @@
+:focus,
+:focus-visible {
+    outline: none;
+}
+
+.toggle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.toggle input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle label:first-child input[type="radio"]:checked+span {
+    background-color: #1d26da;
+
+    color: #faf9f6;
+    font-weight: bold;
+}
+
+.toggle label:last-child input[type="radio"]:checked+span {
+    background-color: #da1d1d;
+
+    color: #faf9f6;
+    font-weight: bold;
+}
+
+.toggle label span {
+    display: flex;
+    cursor: pointer;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    margin: 0;
+    position: relative;
+    box-shadow: 0 0 0 0.0625em #faf9f6;
+    color: #999;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle label:first-child span {
+    border-radius: 3em 0 0 3em;
+}
+
+.toggle label:last-child span {
+    border-radius: 0 3em 3em 0;
+}

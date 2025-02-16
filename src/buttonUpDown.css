@@ -1,0 +1,49 @@
+/* .button {
+    pointer-events: auto;
+    cursor: pointer;
+    background: #FAF9F6;
+    border: none;
+    padding: 8px 26px;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button:focus {
+    outline: none;
+}
+
+.button::before,
+.button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+.button:focus {
+    outline: none;
+}
+
+.buttonUD {
+    font-size: 28px;
+    font-weight: 400;
+    border: 1px solid #999;
+    border-radius: 100%;
+    overflow: hidden;
+    color: #999;
+    pointer-events: auto;
+    cursor: pointer;
+    background: #1a1a1a;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
